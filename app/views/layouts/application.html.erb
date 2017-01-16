@@ -12,10 +12,10 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <%= link_to "Compass", '#', id: "logo" %>
+        <%= link_to "Orientación #{image_tag('orientation.png',size:'24' )}".html_safe, "#", id: 'logo' %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Alumnos",   'static/alumnos' %></li>
+            <li><%= link_to "Alumnos",   'alumnos' %></li>
             <li><%= link_to "Plan",   '#' %></li>
             <li><%= link_to "Mensajes", '#' %></li>
             <li><%= link_to "Blog", '#' %></li>

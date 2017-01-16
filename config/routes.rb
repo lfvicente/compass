@@ -19,6 +19,12 @@ Rails.application.routes.draw do
 
   root 'static#home'
 
+
+  # ALUMNOS
+  get 'static/8155'
+  
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
