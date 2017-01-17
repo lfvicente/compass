@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  root 'static#home'
+  
+  get 'alumnos' => 'static#alumnos'
+  get '8155' => 'static#8155'
+  
+  
   get 'static/login'
 
   get 'static/alumnos'
@@ -17,11 +24,6 @@ Rails.application.routes.draw do
 
   get 'static/home'
 
-  root 'static#home'
-
-
-  # ALUMNOS
-  get 'static/8155'
   
   
 
