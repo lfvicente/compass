@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
-  root 'static#home'
+  root 'static#login'
 
+  get 'login' => 'static#login'
   get 'home' => 'static#home'
   get 'alumnos' => 'static#alumnos'
   get '8155' => 'static#8155'
+  get 'blog' => 'static#blog'
   
   
   get 'static/login'

@@ -1,2 +1,28 @@
-<h1>Static#login</h1>
-<p>Find me in app/views/static/login.html.erb</p>
+<div class="jumbotron center">
+  <div class="row center">
+    <h1><%= image_tag('orientation.png', width: '50') %> Orientod@s</h1>
+  </div>
+  <div class="row center">
+    <h2>
+      Plataforma del Departamento de Orientación
+    </h2>
+  </div>
+  <div class="row center">
+
+    <div class="col-md-6 col-md-offset-3">
+
+      <form action="home">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+        </div>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
