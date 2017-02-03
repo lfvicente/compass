@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.7.1'
 gem 'bootstrap-sass','3.3.6'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17', '>= 4.17.43'
+gem 'momentjs-rails', '>= 2.9.0'
 gem 'puma', '~> 3.4'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.3', '>= 1.3.13'
