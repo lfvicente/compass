@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'alumnos' => 'static#alumnos'
   get '8155' => 'static#8155'
   get 'blog' => 'static#blog'
+  get 'plan' => 'static#plan'
   
   
   get 'static/login'
