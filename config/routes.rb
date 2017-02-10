@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'home' => 'static#home'
   get 'alumnos' => 'static#alumnos'
   get '8155' => 'static#8155'
+  get '8156' => 'static#8156'
+  get '8157' => 'static#8157'
   get 'blog' => 'static#blog'
   get 'plan' => 'static#plan'
   
