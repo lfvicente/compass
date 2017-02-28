@@ -13,9 +13,9 @@
   <div class="row">
       <table class="table">
         <thead><th><%= image_tag('paper-plane.png',size:'24') %></th><th>Autor </th><th> Asunto </th><th>Fecha</th></thead>
-        <tr><td><%= image_tag('email.png',size:'24') %></td><td>José García</td><td>RV: Nuevos horarios </td><td>26/09/2016 12:33</td></tr>
-        <tr><td><%= image_tag('email.png',size:'24') %></td><td>aitanaa@ymail.com</td><td>Tutoría </td><td>25/09/2016 13:20</td></tr>
-        <tr><td><%= image_tag('email.png',size:'24') %></td><td>José García</td><td>RE: RV: Nuevos horarios </td><td>25/09/2016 13:29</td></tr>
+        <tr><td><%= image_tag('email.png',size:'24') %></td><td>José García</td><td>RV: Nuevos horarios </td><td>25/11/2016 12:33</td></tr>
+        <tr><td><%= image_tag('email.png',size:'24') %></td><td>aitanaa@ymail.com</td><td>Tutoría </td><td>23/11/2016 13:20</td></tr>
+        <tr><td><%= image_tag('email.png',size:'24') %></td><td>José García</td><td>RE: RV: Nuevos horarios </td><td>21/11/2016 13:29</td></tr>
       </table>
       <br>
   </div>
@@ -32,16 +32,32 @@
 </div>
 
 <script>
+  
+  $(document).ready(function () {
     $('#datepicker').datepicker({
-
-        format: "dd/mm/yyyy",
-        startDate: "01/09/2016", 
-        endDate: "31/06/2018", 
-        weekStart: 1,
-        language: "es",
-        daysOfWeekDisabled: "0,6",
-        daysOfWeekHighlighted: "1",
-        calendarWeeks: true,
+        startDate: "01/11/2016", 
+        endDate: "30/11/2016", 
+          format: "dd/mm/yyyy",
+          weekStart: 1,
+          language: "es",
+          multidate: true,
+          daysOfWeekDisabled: "0,6", 
+      beforeShowDay: function (date) {
+          if (date.getMonth()==10){
+          switch(date.getDate()){           
+            case 1: case 2:  case 3: case 4: case 21: case 22:  case 23: case 24: case 25:
+              return {tooltip: 'Educación Vial',classes: 'alert-info'};
+            case 7: case 8:  case 9: case 10: case 11:
+              return {tooltip: 'Preparación para simulacro de incendio',classes: 'alert-danger'};
+            case 14: case 15: case 16: case 17: case 18:
+              return {tooltip: 'Preparación 1º Evaluación',classes: 'alert-warning'};
+            case 28: case 29: case 30: 
+              return {tooltip: 'Entrenamiento toma de decisiones',classes: 'alert-success'};
+            
+          }
+        }
+        }
+      });
         
     });
 </script>
