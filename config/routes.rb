@@ -14,7 +14,19 @@ Rails.application.routes.draw do
   get 'actividad1' => 'static#actividad1'
   get 'actividad2' => 'static#actividad2'
   get 'actividad3' => 'static#actividad3'
+  get 'actividad4' => 'static#actividad4'
+  get 'actividad5' => 'static#actividad5'
+  get 'actividad6' => 'static#actividad6'
+  get 'actividad7' => 'static#actividad7'
+  get 'actividad8' => 'static#actividad8'
+  get 'actividad9' => 'static#actividad9'
+  get 'actividad10' => 'static#actividad10'
+  get 'actividad11' => 'static#actividad11'
+  get 'actividad12' => 'static#actividad12'
+  get 'actividad13' => 'static#actividad13'
+  get 'actividad14' => 'static#actividad14'
   
+
   get 'static/login'
 
   get 'static/alumnos'
