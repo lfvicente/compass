@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   get '8157' => 'static#8157'
   get 'blog' => 'static#blog'
   get 'plan' => 'static#plan'
-  
+
+  get 'actividad1' => 'static#actividad1'
+  get 'actividad2' => 'static#actividad2'
+  get 'actividad3' => 'static#actividad3'
   
   get 'static/login'
 

@@ -1,6 +1,7 @@
 <div class="jumbotron">
+	<div class="row center">
 	<h1><%= image_tag('lighthouse.png',size:'50') %>  Plan de Acción Tutorial </h1>
-
+	</div>
 	<div class="row">
 	<h3> Reuniones de coordinación </h3>
 	</div>
@@ -53,8 +54,8 @@
 			    <div id="collapse11" class="panel-collapse collapse in">
 			      <div class="panel-body">
 			      	<p>Dar una acogida cálida al alumnado. Informar sobre funcionamiento del centro.</p>
-			      	<li>Bienvenida al alumnado.</li>
-					<li>Dinámica “¿Quién soy? PLAN DE ACOGIDA </li>
+			      	<li><%= link_to "Bienvenida al alumnado.",   'actividad1' %></li>
+					<li><%= link_to "Dinámica ¿Quién soy? PLAN DE ACOGIDA",   'actividad1' %> </li>
 			      </div>
 			    </div>
 			  </div>
@@ -69,7 +70,7 @@
 			    <div id="collapse12" class="panel-collapse collapse">
 			      <div class="panel-body">
 			      	<p> Motivar elección responsable. Elegir Delegado</p>
-					<li>Votación Elección Delegado.</li>
+					<li><%= link_to "Votación Elección Delegado.",   'actividad2' %></li>
 			      </div>
 			    </div>
 			  </div>
@@ -84,7 +85,7 @@
 			    <div id="collapse13" class="panel-collapse collapse ">
 			      <div class="panel-body">
 			      <p>Conocer más en profundidad al alumnado y evitar conflictos</p>
-			      <li>Actividad “Tú, ¡Qué harías!?</li>
+			      <li><%= link_to "Actividad Tú, ¡Qué harías!?",   'actividad3' %></li>
 			      </div>
 			    </div>
 			  </div>
